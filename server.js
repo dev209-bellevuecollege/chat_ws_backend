@@ -14,7 +14,7 @@ const io = socketIo(server, {
 
 app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Store users and messages
 const users = new Map();
@@ -69,5 +69,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port yes ${PORT}`);
 });
